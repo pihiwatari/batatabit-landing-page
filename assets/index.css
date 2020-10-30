@@ -1,0 +1,480 @@
+/* 
+Concencion de estilos
+
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+:root {
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --warmer-black: #282623;
+  --gray: #757575;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  min-width: 280px;
+  font-weight: 500;
+  color: var(--warm-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(
+    207.8deg,
+    var(--warm-black) 16.69%,
+    var(--bitcoin-orange) 100%
+  );
+}
+
+.header__logo {
+  margin-bottom: 2rem;
+}
+
+.header__hero {
+  max-width: 350px;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.hero__description {
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+
+.hero__button {
+  position: absolute;
+  left: calc(50% - 11.5rem);
+  padding: 1.2rem;
+  width: 23rem;
+  height: 4.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.83rem;
+  border: none;
+  border-radius: 4px;
+  color: var(--warm-black);
+  background-color: var(--off-white);
+  /* Sombras */
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.hero__button span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.main {
+  width: 100%;
+  background-color: var(--off-white);
+}
+
+.exchange {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.exchange__bg-image {
+  margin: 3rem auto;
+  width: 250px;
+  height: 250px;
+  background-image: url("./img/Bitcoin.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.exchange__info {
+  margin: 2rem 0 3rem;
+  text-align: center;
+}
+
+.info__title {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+.info__description {
+  margin: auto;
+  font-size: 1.4rem;
+
+  line-height: 1.8rem;
+  color: var(--gray);
+}
+
+.exchange__offering {
+  margin: 2rem auto 1rem;
+  width: 90%;
+}
+
+.offering__coins {
+  margin: 1rem auto 4rem;
+  width: 80%;
+  max-width: 20rem;
+}
+
+.coins__title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bitcoin-orange);
+}
+
+.coins__title--blue {
+  color: var(--secondary-blue);
+}
+
+.table-container {
+  margin-bottom: 1rem;
+}
+
+.table-container__table {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 2rem;
+}
+
+.table-container__next {
+  margin-left: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.table__left {
+  margin: 1px;
+  padding: 1rem;
+  background-color: var(--just-white);
+}
+
+.left {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+
+  color: #b5b0ac;
+}
+
+.table__right {
+  margin: 1px;
+  padding: 1rem;
+  background-color: var(--just-white);
+}
+
+.right {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--gray);
+}
+
+.right__icon {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 12px;
+  height: 1.2rem;
+}
+
+.trend-up {
+  background-image: url("./icons/trending-up 1.svg");
+  background-size: cover;
+  background-position: center;
+}
+.trend-down {
+  background-image: url("./icons/trending-down 1.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.round-tl {
+  border-radius: 8px 0 0 0;
+}
+.round-tr {
+  border-radius: 0 8px 0 0;
+}
+.round-br {
+  border-radius: 0 0 8px 0;
+}
+.round-bl {
+  border-radius: 0 0 0 8px;
+}
+
+.coins__updated {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 90%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: var(--soft-orange);
+}
+
+.coins__updated--blue {
+  background-color: var(--soft-blue);
+}
+
+/* Secondary table styles*/
+
+/* Secondary table styles*/
+
+.exchange__logo-icon {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  background-image: url("./icons/logo-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.benefits {
+  background-color: var(--warm-black);
+  padding: 4rem 2rem;
+}
+
+.benefits__benefits-container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 900px;
+}
+
+.benefits-container__benefit {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.benefits-container__benefit--light-bg {
+  border-radius: 4px;
+  background-color: var(--warmer-black);
+  /* Sombras */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.benefit__title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--just-white);
+}
+
+.benefit__title--main {
+  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+}
+
+.benefit--text-centered {
+  text-align: center;
+}
+
+.benefit__description {
+  width: 90%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--gray);
+}
+
+.benefit__description--main {
+  margin: 0 auto 1rem;
+}
+
+.benefit__icon {
+  margin-bottom: 1rem;
+}
+
+.meet-today-container {
+  min-width: 320px;
+  height: 80vh;
+  background-image: url("./img/bitcoinbaby.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.meet-today-container__title {
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--just-white);
+}
+
+.plans-container {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.plans-container__title {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+.plans-container__description {
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+.plans-container__article-container {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+}
+
+.article-container__article {
+  position: relative;
+  scroll-snap-align: center;
+  margin: 2rem 1rem 0;
+  padding: 3rem 2rem 2rem;
+  min-width: 200px;
+  max-width: 20rem;
+  height: 250px;
+  border-radius: 8px;
+  background-color: var(--just-white);
+  /* Sombras */
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.article-container__article--dummy {
+  opacity: 50%;
+}
+
+.article__recommended {
+  position: absolute;
+  top: -1.6rem;
+  left: calc(50% - 50px);
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+}
+
+.article__payment-type {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.article__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+}
+
+.price__icon {
+  display: inline-block;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.price__number {
+  margin-bottom: 1rem;
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.article__description {
+  margin-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--gray);
+}
+
+.article__cta {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 95%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  background-color: var(--soft-orange);
+}
+
+.cta__icon {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 24px;
+  height: 24px;
+  background-image: url("./icons/arrow-right.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Arreglar pedos con la flecha puta */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+  background-color: var(--bitcoin-orange);
+}
+
+.footer__social-media-links {
+  list-style: none;
+}
+
+.social-media-links__link {
+  margin-bottom: 0.8rem;
+}
+.social-media-links__link a {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
