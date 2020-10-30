@@ -9,13 +9,13 @@
   width: 100%;
 }
 
-.benefits {
+.benefits__benefits-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2rem 4rem;
 }
 
-.benefits__benefit {
+.benefits-container__benefit {
   margin: 1rem;
 }
 

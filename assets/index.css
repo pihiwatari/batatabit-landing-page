@@ -272,16 +272,22 @@ a {
 }
 
 .benefits {
-  padding: 4rem 2rem;
   background-color: var(--warm-black);
+  padding: 4rem 2rem;
 }
 
-.benefits__benefit {
+.benefits__benefits-container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 900px;
+}
+
+.benefits-container__benefit {
   margin: 2rem 0;
   padding: 2rem;
 }
 
-.benefits__benefit--light-bg {
+.benefits-container__benefit--light-bg {
   border-radius: 4px;
   background-color: var(--warmer-black);
   /* Sombras */
