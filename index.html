@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="./assets/tablet.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -26,7 +31,7 @@
         <p class="hero__description">
           Batabit te ayuda a navegar entre los diferentes precios y tendencias.
         </p>
-        <a class="hero__button" href="#"
+        <a class="hero__button" href="#plans"
           >Conoce nuestros planes
           <span
             ><img
@@ -87,6 +92,41 @@
             </div>
             <!-- <span class="table-container__next">i</span> -->
           </div>
+          <div class="offering__coins">
+            <h3 class="coins__title coins__title--blue">Comisiones</h3>
+            <div class="table-container coins">
+              <div class="table-container__table">
+                <div class="table__left round-tl">
+                  <p class="left">Bitrade</p>
+                </div>
+                <div class="table__right round-tr">
+                  <p class="right">$12.96</p>
+                </div>
+                <div class="table__left">
+                  <p class="left">Bitpreco</p>
+                </div>
+                <div class="table__right">
+                  <p class="right">$13.07</p>
+                </div>
+                <div class="table__left">
+                  <p class="left">Novadax</p>
+                </div>
+                <div class="table__right">
+                  <p class="right">$13.15</p>
+                </div>
+                <div class="table__left round-bl">
+                  <p class="left">Coinext</p>
+                </div>
+                <div class="table__right round-br">
+                  <p class="right">$14.96</p>
+                </div>
+              </div>
+              <p class="coins__updated coins__updated--blue">
+                <b>Actualizado:</b> 19 Julio 23:45
+              </p>
+            </div>
+            <!-- <span class="table-container__next">i</span> -->
+          </div>
         </section>
         <div class="exchange__logo-icon"></div>
       </section>
@@ -143,7 +183,7 @@
       <section class="meet-today-container">
         <h2 class="meet-today-container__title">Conócelo hoy.</h2>
       </section>
-      <section class="plans-container">
+      <section id="plans" class="plans-container">
         <h2 class="plans-container__title">
           Escoge el plan que más se ajuste a ti.
         </h2>

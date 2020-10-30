@@ -145,14 +145,14 @@ a {
 }
 
 .exchange__offering {
-  margin: 2rem auto 4rem;
+  margin: 2rem auto 1rem;
   width: 90%;
 }
 
 .offering__coins {
-  margin: 0 auto;
+  margin: 1rem auto 4rem;
   width: 80%;
-  max-width: 25rem;
+  max-width: 20rem;
 }
 
 .coins__title {
@@ -160,6 +160,10 @@ a {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--bitcoin-orange);
+}
+
+.coins__title--blue {
+  color: var(--secondary-blue);
 }
 
 .table-container {
@@ -247,6 +251,10 @@ a {
   background-color: var(--soft-orange);
 }
 
+.coins__updated--blue {
+  background-color: var(--soft-blue);
+}
+
 /* Secondary table styles*/
 
 /* Secondary table styles*/
@@ -313,7 +321,6 @@ a {
 }
 
 .meet-today-container {
-  width: 100%;
   min-width: 320px;
   height: 80vh;
   background-image: url("./img/bitcoinbaby.jpg");
@@ -353,6 +360,7 @@ a {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
 }
 
 .article-container__article {
